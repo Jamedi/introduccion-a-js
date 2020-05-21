@@ -11,8 +11,8 @@ for (i = 3; i < 22; i = i + 3){
 //       diez a uno.
 
 /*
-let numero = 10;
-while (numero >= 0){
+let numero = 11;
+while (numero > 0){
      console.log("Probando un while " + numero);
      numero--;
 }
