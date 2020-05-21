@@ -4,10 +4,42 @@
 // Ejecutar la función con estos datos
 // Impriman el resultado en la consola
 
+/*
+let anioactual = Number(prompt("Ingrese anio actual"));
+let anioDeNaciomientoUsuario = Number(prompt("Ingrese año de nacimiento"));
+
+function calcularEdadDelUsuario(Anioactual, anioDeNaciomientoUsuario){
+    return Anioactual - anioDeNaciomientoUsuario;
+}
+
+console.log("su edad es " + calcularEdadDelUsuario(anioactual,anioDeNaciomientoUsuario) + " años" );
+*/
 
 // Preguntar el salario anual y calcular el salario mensual
 // Preguntar el salario mensual y calcular el anual
 // diario... semanal, por hora. etc.
+
+/* TAREA SALARIO MENSUAL
+let salarioAnual = Number(prompt("ingrese su salario anual"));
+
+function calcularSalarioMensual(salarioAnual){
+    let meses = 12;
+    return salarioAnual / meses;
+}
+
+console.log("su salario mensual es de " + calcularSalarioMensual(salarioAnual));
+*/
+
+/*
+let salarioMensual = Number(prompt("Ingrese su salario mensual"));
+
+function calcularSalarioAnual(salarioMensual){
+    const meses = 12;
+    return salarioMensual * meses;
+}
+ console.log("su salario anual es de " + calcularSalarioAnual(salarioMensual));
+*/
+
 
 
 /// SCOPE
