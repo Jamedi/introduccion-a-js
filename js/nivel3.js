@@ -152,10 +152,10 @@ nuestroTitulo.innerText = "Hola! r/argentina programa!";
 const mediaLinks = document.querySelectorAll("li")
 console.log(mediaLinks);
 
-for(let i = 0; i < mediaLinks.length; i++){
-    console.log(mediaLinks[i].innerText);
-    mediaLinks[i].innerText = "hola";
-}
+setInterval(function(){
+     nuestroTitulo.innerText = String(Math.random());
+}, 1000)
+
 
 
 
@@ -164,7 +164,7 @@ for(let i = 0; i < mediaLinks.length; i++){
 // TAREA: Ahora utilizá console.log para ver la cantidad de 
 // elementos li que hay con mediaLinks.length
 
-
+console.log(mediaLinks.length);
 
 
 
@@ -173,6 +173,10 @@ for(let i = 0; i < mediaLinks.length; i++){
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
 
+for(let i = 0; i < mediaLinks.length; i++){
+    console.log(mediaLinks[i].innerText);
+    mediaLinks[i].innerText = "hola";
+}
 
 
 
@@ -194,9 +198,8 @@ for(let i = 0; i < mediaLinks.length; i++){
 // TAREA: Obtené el contenido de nuestro elemento 'h1'
 // y utilizá console.log para mostrarlo.
 
-
-
-
+let htmlTitulo = document.querySelector("h1");
+console.log(htmlTitulo.textContent);
 
 
 /*
@@ -215,8 +218,8 @@ for(let i = 0; i < mediaLinks.length; i++){
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
-
-
+htmlTitulo.textContent = "Nuevo titulo hecho en javascript";
+console.log(htmlTitulo.textContent);
 
 
 /*
@@ -233,9 +236,8 @@ for(let i = 0; i < mediaLinks.length; i++){
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
 
-
-
-
+const nuestraImagen = document.querySelector("img");
+nuestraImagen.src = "img/kittens.jpeg";
 
 
 /*
@@ -258,9 +260,8 @@ for(let i = 0; i < mediaLinks.length; i++){
 
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
-
-
-
+const nuestroBody = document.querySelector("body")
+nuestroBody.style.background = "green"; 
 
 
 /*
@@ -288,8 +289,7 @@ for(let i = 0; i < mediaLinks.length; i++){
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
-
-
+const nuevoLogo = document.createElement("img"); 
 
 
 
@@ -298,3 +298,21 @@ for(let i = 0; i < mediaLinks.length; i++){
 // Levántate, estira las piernas y celebra tu logro.                      //
 // ¡Creo que esto amerita un festejo!                                     //
 ////////////////////////////////////////////////////////////////////////////
+
+
+const botonIngreso = document.querySelector("#ingresar");
+
+botonIngreso.onclick = function(){
+    const edadUsuario = Number(document.querySelector("#edad-usuario").value);
+    let textoResultado;
+
+    if (edadUsuario >= 18){
+        textoResultado = "Podes entrar al bar";
+    }
+    else {
+        textoResultado = "No podes entrar";
+    }
+    document.querySelector("#resultado").innerText = textoResultado;
+    return false;
+}
+
