@@ -124,7 +124,10 @@
 //       variable llamada nuestroTitulo.
 //       Utilizá console.log para ver lo que obtuviste!
 
-
+const nuestroTitulo = document.querySelector("h1");
+console.log(nuestroTitulo);
+console.log(nuestroTitulo.innerText);
+nuestroTitulo.innerText = "Hola! r/argentina programa!";
 
 
 
@@ -146,6 +149,13 @@
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
+const mediaLinks = document.querySelectorAll("li")
+console.log(mediaLinks);
+
+for(let i = 0; i < mediaLinks.length; i++){
+    console.log(mediaLinks[i].innerText);
+    mediaLinks[i].innerText = "hola";
+}
 
 
 
