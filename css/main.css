@@ -125,3 +125,18 @@ footer a:hover {
     }
 }
 
+h1 {
+
+    font-size: 65px;
+    color: white; 
+}
+
+.subtitulo {
+
+    color: red;
+}
+
+#titulo{
+
+    color: black;
+}

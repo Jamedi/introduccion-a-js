@@ -10,17 +10,56 @@ Desafío de programación #1: Imprimí los números del 1 al 10
 
  Resultado: 10 9 8 7 6 5 4 3 2 1
 
+*/
+
+/*
+let numero = 10;
+while (numero > 0){
+  console.log(numero);
+  numero--
+}
+*/
+
+/*
+let numero;
+for (numero = 10; numero > 0; numero--){
+  console.log(numero);
+}
+*/
+
+/*
+
  Desafìo de programación  #2: Imprimí los números impares del 1 al 100
 
  1 3 5 ... 99
+*/
 
+/*
+let numero;
+for(numero = 1; numero < 100; numero = numero + 2){
+  console.log(numero)
+}
+*/
+
+/*
 Desafío de programación #3: Imprimí la tabla de multiplicación del 7
 
  7x0 = 0
  7x1 = 7
  ...
  7x9 = 63
+*/
 
+/*
+for(let i = 1; i <= 10; i++){
+  let multi7 = "7 * " + i + " = " + 7 * i;
+  console.log(multi7);
+}
+*/
+
+
+
+/*
 Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1 al 9
 
  1x0 = 0
@@ -32,12 +71,31 @@ Desafío de programación #4: Imprimí todas las tablas de multiplicación del 1
  ...
  ...
  9x9 = 81
+*/
 
+/*
+for(let i = 1; i <= 10; i++){
+  cambioDeTabla(i);
+
+}
+
+function cambioDeTabla(tabla){
+    for(let i = 1; i <= 10; i++){
+      let tablaDeMultiplicar = (tabla + " * " + i + " = " + tabla * i);
+      console.log(tablaDeMultiplicar);
+    }
+
+}
+*/
+
+/*
 Desafío de programación #5: Calcula el resultado de la suma de los numeros del 1 al 10 en un array.
  [1,2,3,4,5,6,7,8,9,10]
 
  1 + 2 + 3 + ... + 10 = ? //hacerlo con un array y un bucle
+*/
 
+/*
 Desafío de programación #6: Calcula 10! (10 factorial)
 
  10 * 9 * 8 * ... * 1
