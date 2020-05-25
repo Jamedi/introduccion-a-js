@@ -42,10 +42,7 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
-
-
-
-
+let comidasFavoritas = ["milanesa", "pollo", "guiso", "hamburguesas"];
 
 
 /*
@@ -65,7 +62,7 @@
 // imprimi utilizando console.log el resultado.
 
 
-
+console.log(comidasFavoritas.length);
 
 
 
@@ -91,9 +88,7 @@
 // TAREA: Obtené el tercer elemento de tu array comidasFavoritas e imprimilo utilizando console.log.
 
 
-
-
-
+console.log(comidasFavoritas[2]);
 
 /*
     Cambio de Valores en Arrays
@@ -115,15 +110,14 @@
 // TAREA: Toma tu array de comidasFavoritas y reemplaza el primer valor
 // con cualquier otra cosa.
 
-
-
+comidasFavoritas[1] = "Carne";
 
 
 
 // TAREA: console.log todo el array para verificar.
 
 
-
+console.log(comidasFavoritas);
 
 
 
@@ -146,16 +140,12 @@
 
 // TAREA: Extendamos tu lista de comidasFavoritas y agreguemos un valor más.
 
-
-
-
+comidasFavoritas.push("Fideos");
 
 
 // TAREA: console.log todo el array para verificar.
 
-
-
-
+console.log(comidasFavoritas);
 
 
 /*
@@ -181,17 +171,14 @@
 
 // TAREA: Intenta crear un array como una constante y modifica los valores que contiene.
 
+const animales = ["perro", "gato", "pato"];
 
-
-
-
-
+animales[2] = "cocodrilo";
+console.log(animales);
 
 // TAREA: Observa lo que sucede si agregas algo con.push(), cambias algo
 //       con notación de corchetes (array[1]) y
 //       asigna un nuevo array completamente nuevo a la constante
-
-
 
 
 
@@ -219,8 +206,9 @@
      Si te olvidas uno de estos, ¡podes entrar en un bucle infinito!
 
      Veamos diferentes estructuras de bucle.
-
 */
+
+
 
 /*
     Bucles while (mientras)
@@ -246,9 +234,11 @@
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-
-
-
+let numero = 0;
+while (numero < 11){
+     console.log("Probando un while " + numero);
+     numero++;
+}
 
 
 /*
@@ -268,10 +258,12 @@
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
-
-
-
-
+/*
+let i;
+for (i = 3; i < 22; i = i + 3){
+    console.log(i);
+} 
+*/
 
 /*
     Iterando a traves de Arrays
@@ -297,7 +289,9 @@
 // TAREA: Probalo con tu comidasFavoritas array.
 
 
-
+for (let i = 0; i < animales.length; i++){
+    console.log(`me gusta la ${comidasFavoritas[i]}`);
+}
 
 
 
@@ -338,6 +332,22 @@
 // 10% 3 = 1 - en 10 tenemos 3 * 3 + 1
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
+
+let i;
+for (i = 1; i <= 50; i++){
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz");
+    }
+    else if (i % 3 === 0){
+        console.log("Fizz");
+    }
+    else if (i % 5 === 0){
+        console.log("Buzz");
+    }
+    else {
+        console.log(i);
+    }
+}
 
 
 

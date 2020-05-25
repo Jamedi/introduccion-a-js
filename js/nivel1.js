@@ -40,6 +40,8 @@
 
 // Tarea: Ahora te toca a vos! Acá abajo escribí una alerta que diga "Hola mundo!"
 
+//alert("Hola mundo");
+//console.log("Hola mundo");
 
 // Tarea: Una vez que la alerta funcione, comentala poniendo '//' en la línea donde está el código y guardá los cambios.
 // Una vez que recargás la página, ya no debería aparecer más.
@@ -47,6 +49,7 @@
 
 // Tarea: Ahora probá hacer un console.log de un mensaje que queramos.
 
+//console.log("Probando console.log");
 
 // Consejo: Para recargar el navegador podemos apretar 'CMD + R' en Mac y 'CTRL + R' en
 //      Windows.
@@ -102,6 +105,9 @@
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
 
+let numeroUno;
+let numeroDos;
+
 
 /*
     Podés usar el nombre de tus variables pare representar qué información tienen adentro, por ejemplo:
@@ -115,6 +121,12 @@
 // Crear 2 variables nuevas, una con tu nombre, la segunda con tu edad. Dales un nombre apropriado y
 // mostralas con un alert.
 
+let miNombre = "Jonatan";
+let miEdad = "22";
+
+/*/alert(miNombre);
+//alert(miEdad);
+
 
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
@@ -125,6 +137,7 @@
 * alert(nombre + apellido)
 *
 * */
+
 
 
 /*
@@ -150,9 +163,13 @@
 
 // TAREA: Crear una constante y mostrarla con un alert
 
+const VentanasEnMiCuarto = 1;
+//alert("tengo " + VentanasEnMiCuarto + " ventanas en mi cuarto");
+
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
 
+//VentanasEnMiCuarto = 2;
 
 // Consejo: No te olvides de comentar (//) los alerts y los errores intencionales (como en la tarea anterior) para
 // que los alerts no aparezcan cada vez, y para que los errores no hagan que el programa se detenga.
@@ -183,6 +200,10 @@
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
+let diez = 10;
+let tres = 3;
+let resultadoMultiplicacion = diez * tres;
+//console.log(resultadoMultiplicacion); 
 
 /*
     Funciones
@@ -239,11 +260,21 @@
 // Escribí código para que devuelva (return) la suma de numero1 y numero2
 // Ejecutá la función sumar y mostrá su resultado en la consola
 
+function sumar (numero1, numero2){
+    return numero1 + numero2;
+}
+
+//console.log("el resultado de la suma da " + sumar(3,5));
 
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
 
+function restar(numero1, numero2){
+    return numero1 - numero2;
+}
+
+//console.log("el resultado de la resta da " + restar(10,5));
 
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
@@ -327,6 +358,21 @@
 // No se olviden de hacer un console.log para ver el resultado!
 //
 
+/*
+let operador = "+";
+let numero1 = 14; 
+let numero2 = 2;
+
+if (operador === "+"){
+    console.log(sumar(numero1,numero2));
+}
+else{
+    console.log(restar(numero1,numero2));
+}
+*/
+
+
+
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
 
@@ -360,8 +406,13 @@
 
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
 
+function dividir(numero1, numero2){
+    return numero1 / numero2;
+}
 
-
+function multiplicación(numero1, numero2){
+    return numero1 * numero2;
+}
 
 
 // TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
@@ -370,8 +421,25 @@
 //       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
 //       else console.log - "Perdón, no conozco ese operador".
 
+let operador = "/";
+let numero1 = 14; 
+let numero2 = 2;
 
-
+if (operador === "+"){
+    console.log(sumar(numero1,numero2));
+}
+else if (operador === "-"){
+    console.log(restar(numero1,numero2));
+}
+else if (operador === "/"){
+    console.log(dividir(numero1,numero2));
+}
+else if (operador === "*"){
+    console.log(multiplicación(numero1,numero2));
+}
+else{
+    console.log("Perdon, no conozco ese operardor");
+}
 
 
 /*
@@ -400,6 +468,11 @@
 
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
+
+const salirDiaDeLluvia = false;
+console.log(salirDiaDeLluvia);
+console.log(!salirDiaDeLluvia)
+console.log(!!salirDiaDeLluvia);
 
 
 ////////////////////////////////////////////////////////////////////////////
