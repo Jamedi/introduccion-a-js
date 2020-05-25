@@ -290,8 +290,8 @@ nuestroBody.style.background = "green";
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
 const nuevoLogo = document.createElement("img"); 
-
-
+nuevoLogo.src = "img/woman_bw.jpg";
+document.querySelector("header").appendChild(nuevoLogo);
 
 ////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 3 de JavaScript Básico!          //
