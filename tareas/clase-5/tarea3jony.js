@@ -45,6 +45,8 @@ function minutos_a_horas(){
   $botonHsMemoria[1].onclick = function(){
     segundos_a_minutos()
     minutos_a_horas()
+    let crearStrong  = document.createElement("strong");
+    document.querySelector("#total-horas").appendChild(crearStrong);
     if($segundos || $horas || $segundos)
     {
       document.querySelector("#total-horas").textContent= `Duracion total de los videos: ${$horas}:${$minutos}:${$segundos}`
@@ -56,4 +58,5 @@ function minutos_a_horas(){
     
     return false;
   }
+  
   
